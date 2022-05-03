@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+p {
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    font-size: 140%;
+}
+
+p.special {
+    display: inline-block;
+    position: absolute;
+    left: 30%;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    color: #000000;
+    background-color: slateblue;
+    opacity: 0.8;
+}

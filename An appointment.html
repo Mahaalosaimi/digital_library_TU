@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Appointment Booking website </title>
+    <style type="text/css">
+        body {
+            background-image: url('file:///C:/Users/sherr/OneDrive/documents/%D9%85%D9%84%D9%81%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9/%D8%AA%D9%82%D9%86%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%B1%D9%86%D8%AA/project/undraw_booked_re_vtod.svg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+
+    <body>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /* Style the header */
+            
+            header {
+                background-color: #FFFFF;
+                padding: 30px;
+                text-align: : left;
+                font-size: 30px;
+                color: #00000;
+            }
+            /* Create two columns/boxes that floats next to each other */
+            
+            nav {
+                float: left;
+                width: 20%;
+                height: 300px;
+                /* only for demonstration, should be removed */
+                background: #FFFFF;
+                padding: 20px;
+            }
+            /* Style the list inside the menu */
+            
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            
+            article {
+                float: left;
+                padding: 20px;
+                width: 50%;
+                background-color: #FFFFF;
+                height: 300px;
+                /* only for demonstration, should be removed */
+            }
+            /* Clear floats after the columns */
+            
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            /* Style the footer */
+            
+            footer {
+                background-color: #FFFFF;
+                padding: 10px;
+                text-align: center;
+                color: #00000;
+            }
+            /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+            
+            @media (max-width: 600px) {
+                nav,
+                article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+</head>
+
+<body>
+
+    <header>
+        <br>
+        <br>
+        <tr>
+            <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Appointment Booking </h2>
+    </header>
+
+    <section>
+        <nav>
+
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <article>
+
+            <div class="form p-6 pb-12 sm:p-12 sm:pb-16 md:p-20 md:pb-24">
+                <div class="max-w-screen-sm mx-auto">
+                    <form id="ft-form" method="POST" accept-charset="UTF-8">
+                        <fieldset>
+                            <legend>For Students</legend>
+                            <label>
+                                            Name
+                                            <input type="text" name="name" required>
+                                        </label>
+                            <label>
+                                                Id Students number
+                                                <input type="text" name="Id">
+                                            </label>
+                            <div class="two-cols">
+                                <label>
+                                                Email address
+                                                <input type="email" name="email" required>
+                                            </label>
+                                <label>
+                                                Phone number
+                                                <input type="text" name="phone">
+                                            </label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Appointment request</legend>
+                            <div class="two-cols">
+                                <label>
+                                                Date
+                                                <input type="date" name="Appointment request" required>
+                                            </label>
+                                <label>
+                                                Room number
+                                                <input type="tel" name="Room">
+                                            </label>
+                                <div class="inline">
+                                    <label>
+                                                    <input type="hidden" name="Morning desired" value="no">
+                                                    <input type="checkbox" name="Morning desired" value="yes">
+                                                    Morning
+                                                </label>
+                                    <label>
+                                                    <input type="hidden" name="Afternoon desired" value="no">
+                                                    <input type="checkbox" name="Afternoon desired" value="yes">
+                                                    Afternoon
+                                                </label>
+                                </div>
+                            </div>
+                            <p>Confirmation requested by</p>
+                            <div class="inline">
+                                <label>
+                                                <input type="radio" name="Confirmation requested by" value="email" checked>
+                                                Email
+                                            </label>
+                                <label>
+                                                <input type="radio" name="Confirmation requested by" value="phone">
+                                                Phone call
+                                            </label>
+                            </div>
+                        </fieldset>
+
+
+                    </form>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+    <footer>
+        <style>
+            input[type=button],
+            input[type=submit],
+            input[type=reset] {
+                background-color: #bdbdbd;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
+        </head>
+
+        <body>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+
+        </body>
+    </footer>
+    <script>
+        var myDate = new Date();
+        var Hour = myDate.getHours();
+        var Minute = myDate.getMinutes();
+        if (Hour < 12 && Hour > 0) {
+            alert("صباح الخير");
+        } else if (Hour > 12 && Hour < 18) {
+            alert("أهلا بكم");
+        } else if (Hour > 18 && Hour < 23) {
+            alert("مساء الخير");
+        }
+    </script>
+</body>
+
+</html>
