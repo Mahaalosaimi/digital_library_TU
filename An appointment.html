@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Appointment Booking website </title>
+    <title>حجز المواعيد </title>
     <style type="text/css">
         body {
             background-image: url('undraw_booked_re_vtod.svg');
@@ -90,8 +90,8 @@
     <header>
         <br>
         <br>
-            
-            <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;حجز غرفة دراسية </h2>
+        <tr>
+            <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Appointment Booking </h2>
     </header>
 
     <section>
@@ -105,16 +105,16 @@
         <br>
         <br>
         <br>
-      <br>
-      <br>
+        <br>
+        <br>
+        <br>
         <article>
 
             <div class="form p-6 pb-12 sm:p-12 sm:pb-16 md:p-20 md:pb-24">
                 <div class="max-w-screen-sm mx-auto">
                     <form id="ft-form" method="POST" accept-charset="UTF-8">
-                        <form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8">
-                            <fieldset>
-                              <legend>بيانات الطالب</legend>
+                        <fieldset>
+                           <legend>بيانات الطالب</legend>
                               <label>
                                 الاسم
                                 <input type="text" name="name" required>
@@ -160,18 +160,11 @@
                                   <input type="radio" name="Confirmation requested by" value="phone">
                                   رقم الهاتف
                                 </label>
-                              </div>
-                            </fieldset>
-                            <br>
-                            <br>
-                            <div class="btns">
-                              <input type="text" name="_gotcha" value="" style="display:none;">
-                                <input type="submit" value="ارسال ">
-                                <input type="back" value=" رجوع" onclick="window.location.href='file:index.html">
-                    
                             </div>
-                          </form>
-                    
+                        </fieldset>
+
+
+                    </form>
                 </div>
             </div>
 
@@ -180,11 +173,9 @@
 
     <footer>
         <style>
-            input[type=back],
+            input[type=button],
             input[type=submit],
-            input[type=reset]
-           
-            {
+            input[type=reset] {
                 background-color: #bdbdbd;
                 border: none;
                 color: white;
@@ -192,15 +183,15 @@
                 text-decoration: none;
                 margin: 4px 2px;
                 cursor: pointer;
-                text-align: center;
             }
         </style>
         </head>
 
         <body>
-          
-           
-           
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+
         </body>
     </footer>
     <script>
