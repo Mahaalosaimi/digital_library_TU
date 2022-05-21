@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Page Title</title>
+    <title>طلب كتاب</title>
     <link rel="stylesheet" href="CSS project copy.css">
     <script>
         var currentDateTime = new Date();
@@ -32,48 +32,48 @@
 <body>
     <form action="reservation.php" method="post">
         <div class="elem-group">
-            <label for="name">Name</label>
+            <label for="name">الاسم</label>
             <input type="text" id="name" name="visitor_name" placeholder="Sara Saad" required>
         </div>
         <div class="elem-group">
-            <label for="email">E-mail</label>
+            <label for="email">البريد الإلكتروني </label>
             <input type="email" id="email" name="visitor_email" placeholder="name@email.com" required>
         </div>
         <div class="elem-group">
-            <label for="phone">Phone Number</label>
+            <label for="phone">رقم الجوال</label>
             <input type="tel" id="phone" name="visitor_phone" placeholder="(+966)-##-###-####">
         </div>
         <hr>
         <div class="elem-group inlined1">
-            <label for="book">How Many Books?</label>
+            <label for="book">عدد الكتب المطلوبة</label>
             <input type="number" id="book" name="book" placeholder="2" min="1" required>
         </div>
 
         <div class="elem-group inlined">
-            <label for="Borrow-date">Borrowing Date</label>
+            <label for="Borrow-date">تاريخ الاستعارة </label>
             <input type="date" id="Borrow-date" name="Borrow" required>
         </div>
         <div class="elem-group inlined">
-            <label for="submission-date">Returning   Date</label>
+            <label for="submission-date">تاريخ إعادة الكتاب</label>
             <input type="date" id="submission-date" name="submission" required>
         </div>
         <div class="elem-group">
-            <label for="book-Section">Book Section</label>
+            <label for="book-Section">قسم الكتاب</label>
             <select id="book-Section" name="book-Section" required>
-        <option value="">Choose a section from the list</option>
-        <option value="arabic">arabic</option>
-      <option value="English ">English </option>
-        <option value="Computer">Computer</option>
-       <option value=" History"> History </option>
-         <option value=" religion"> religion </option>
+        <option value="">اختر قسم الكتاب من القائمة</option>
+        <option value="arabic">عربي</option>
+      <option value="English ">انجليزي</option>
+        <option value="Computer">كمبيوتر</option>
+       <option value=" History">تاريخ </option>
+         <option value=" religion"> دين </option>
     </select>
         </div>
         <hr>
         <div class="elem-group">
-            <label for="message">Book name </label>
-            <textarea id="message" name="visitor_message" placeholder="Please write book name and number" required></textarea>
+            <label for="message">عنوان الكتاب </label>
+            <textarea id="message" name="visitor_message" placeholder="من فضلك اكتب عنوان الكتاب و رقمه " required></textarea>
         </div>
-        <button type="submit">sumbit</button>
+        <button type="submit">إرفاق</button>
     </form>
 </body>
 
