@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <title>طلب كتاب</title>
-    <link rel="stylesheet" href="CSS project copy.css">
+    <link rel="stylesheet" href="CSSprojectcopy.css">
     <script>
         var currentDateTime = new Date();
         var year = currentDateTime.getFullYear();
@@ -30,6 +31,7 @@
 </head>
 
 <body>
+    <a href="#bottom">scroll down</a>
     <form action="reservation.php" method="post">
         <div class="elem-group">
             <label for="name">الاسم</label>
@@ -75,6 +77,8 @@
         </div>
         <button type="submit">إرفاق</button>
     </form>
+    <a href="#top">scroll up</a>
+    <a id="bottom"></a>
 </body>
 
 </html>
