@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8">
     <title>حجز المواعيد </title>
-    <style type="text/css">
+    <style>
         body {
             background-image: url('undraw_booked_re_vtod.svg');
             background-repeat: no-repeat;
@@ -13,186 +13,159 @@
         }
     </style>
 
-    <body>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-            
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            /* Style the header */
-            
-            header {
-                background-color: #FFFFF;
-                padding: 30px;
-                text-align: : left;
-                font-size: 30px;
-                color: #00000;
-            }
-            /* Create two columns/boxes that floats next to each other */
-            
-            nav {
-                float: left;
-                width: 20%;
-                height: 300px;
-                /* only for demonstration, should be removed */
-                background: #FFFFF;
-                padding: 20px;
-            }
-            /* Style the list inside the menu */
-            
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-            
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        header {
+            padding: 30px;
+            text-align: left;
+            font-size: 30px;
+        }
+        
+        nav {
+            float: left;
+            width: 20%;
+            height: 300px;
+            padding: 20px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        article {
+            float: left;
+            padding: 20px;
+            width: 50%;
+            height: 300px;
+        }
+        
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        footer {
+            padding: 10px;
+            text-align: center;
+            color: #0000;
+        }
+        
+        @media (max-width: 600px) {
+            nav,
             article {
-                float: left;
-                padding: 20px;
-                width: 50%;
-                background-color: #FFFFF;
-                height: 300px;
-                /* only for demonstration, should be removed */
+                width: 100%;
+                height: auto;
             }
-            /* Clear floats after the columns */
-            
-            section::after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-            /* Style the footer */
-            
-            footer {
-                background-color: #FFFFF;
-                padding: 10px;
-                text-align: center;
-                color: #00000;
-            }
-            /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-            
-            @media (max-width: 600px) {
-                nav,
-                article {
-                    width: 100%;
-                    height: auto;
-                }
-            }
-        </style>
-</head>
-
-<body>
-
+        }
+        
+        input[type=button],
+        input[type=submit],
+        input[type=reset] {
+            background-color: #bdbdbd;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
     <header>
         <br>
         <br>
-        <tr>
-            <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; حجز المواعيد </h2>
+
+        <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; حجز المواعيد </h2>
     </header>
+    <nav>
 
-    <section>
-        <nav>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-        </nav>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <article>
 
-            <div class="form p-6 pb-12 sm:p-12 sm:pb-16 md:p-20 md:pb-24">
-                <div class="max-w-screen-sm mx-auto">
-                    <form action="reservation.php" id="ft-form" method="POST" accept-charset="UTF-8">
-                        <fieldset>
-                           <legend>بيانات الطالب</legend>
-                              <label>
+    <div class="form p-6 pb-12 sm:p-12 sm:pb-16 md:p-20 md:pb-24">
+        <div class="max-w-screen-sm mx-auto">
+            <form action="reservation.php" id="ft-form" method="POST" accept-charset="UTF-8">
+                <fieldset>
+                    <legend>بيانات الطالب</legend>
+                    <label>
                                 الاسم
                                 <input type="text" name="name" required>
                               </label>
-                              <div class="two-cols">
-                                <label>
+                    <div class="two-cols">
+                        <label>
                                   البريد الالكتروني
                                   <input type="email" name="email" required>
                                 </label>
-                                <label>
+                        <label>
                                   رقم الهاتف
                                   <input type="tel" name="phone">
                                 </label>
-                              </div>
-                            </fieldset>
-                            <fieldset>
-                              <legend>طلب موعد</legend>
-                              <div class="two-cols">
-                                <label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>طلب موعد</legend>
+                    <div class="two-cols">
+                        <label>
                                   التاريخ
                                   <input type="date" name="Appointment request" required>
                                 </label>
-                                <div class="inline">
-                                  <label>
+                        <div class="inline">
+                            <label>
                                     <input type="hidden" name="Morning desired" value="no">
                                     <input type="checkbox" name="Morning desired" value="yes">
                                    الصباح
                                   </label>
-                                  <label>
+                            <label>
                                     <input type="hidden" name="Afternoon desired" value="no">
                                     <input type="checkbox" name="Afternoon desired" value="yes">
                                     المساء
                                   </label>
-                                </div>
-                              </div>
-                              <p>  لتاكيد الطلب ارسال رسالة عبر: </p>
-                              <div class="inline">
-                                <label>
+                        </div>
+                    </div>
+                    <p> لتاكيد الطلب ارسال رسالة عبر: </p>
+                    <div class="inline">
+                        <label>
                                   <input type="radio" name="Confirmation requested by" value="email" checked>
                                   البريد الالكتروني
                                 </label>
-                                <label>
+                        <label>
                                   <input type="radio" name="Confirmation requested by" value="phone">
                                   رقم الهاتف
                                 </label>
-                            </div>
-                        </fieldset>
+
+                    </div>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
 
 
-                    </form>
-                </div>
-            </div>
-
-        </article>
-    </section>
 
     <footer>
-        <style>
-            input[type=button],
-            input[type=submit],
-            input[type=reset] {
-                background-color: #bdbdbd;
-                border: none;
-                color: white;
-                padding: 16px 32px;
-                text-decoration: none;
-                margin: 4px 2px;
-                cursor: pointer;
-            }
-        </style>
-        </head>
 
-        <body>
+        <input type="reset" value="اعادة تعيين">
+        <input type="submit" value="ارفاق">
 
-            <input type="reset" value="اعادة تعيين">
-            <input type="submit" value="ارفاق">
 
-        </body>
     </footer>
     <script>
         var myDate = new Date();
@@ -206,6 +179,6 @@
             alert("مساء الخير");
         }
     </script>
-</body>
+    </body>
 
 </html>
